@@ -16,7 +16,7 @@ def test_example_4():
     n = 4
     assert climb_stairs(n) == 5
 
-
+@pytest.mark.fail_slow(1)
 def test_big_number():
-    n = 45
-    print(climb_stairs(n))
+    n = 35
+    climb_stairs(n)
