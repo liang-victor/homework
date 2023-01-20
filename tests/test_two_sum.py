@@ -26,4 +26,4 @@ def test_contains_duplicates():
 def test_no_doubling_up():
     nums = [1, 3, 4, 2]
     target = 6
-    assert two_sum(nums, target) == [3, 2]
+    assert two_sum(nums, target) == [2, 3]
