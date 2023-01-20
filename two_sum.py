@@ -18,5 +18,5 @@ def two_sum(nums, target):
     for current_index, num in enumerate(nums):
         complement = target - num
         if complement in nums_dict:
-            return [current_index, nums_dict[complement]]
+            return [nums_dict[complement], current_index]
         nums_dict[num] = current_index
