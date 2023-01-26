@@ -9,12 +9,6 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
 """
 
 
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
 def has_cycle(head):
     """Returns true if the linked list has a cycle
 

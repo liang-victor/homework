@@ -1,5 +1,6 @@
 import pytest
-from linked_list_cycle import ListNode, has_cycle
+from linked_list_cycle import has_cycle
+from data_structures.linked_list import ListNode, LinkedList
 
 
 def test_example_1():
