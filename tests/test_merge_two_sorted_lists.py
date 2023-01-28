@@ -50,4 +50,4 @@ def test_both_empty():
     result = merge_two_lists(list1.head, list2.head)
     expected = []
 
-    assert traverse(result) == expected
+    assert result is None
