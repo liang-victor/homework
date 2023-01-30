@@ -19,7 +19,7 @@ def test_level_order():
 
 def test_single_node():
     a = TreeNode(3)
-    assert level_order(3) == [[3]]
+    assert level_order(a) == [[3]]
 
 
 def test_no_node():
