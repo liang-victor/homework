@@ -9,7 +9,12 @@ class TreeNode:
         self.right = right
 
     def __repr__(self):
-        return f"TreeNode: {self.val}. L: {self.left} R: {self.right}"
+        left_child = self.left.val if self.left else "None"
+        right_child = self.right.val if self.right else "None"
+        return f"TreeNode: {self.val} L: {left_child} R: {right_child}"
+
+    def __bool__(self):
+        return self.val is not None
 
 
 def construct_from_list(values):
